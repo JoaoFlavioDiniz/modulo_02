@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade Agenda 02 Desevolvimento de Sistemas</title>
+	
+	<!-- link do arquivo de CSS externo -->
+    <link rel="stylesheet" href="assets\css\Style.css">
+ 
+</head>
+
+<body>
+    <form id="form1" name="form1" method="post" action="processaCadastro.php"><br>
+
+        <label class="forms" for="nomeCompleto">Nome Completo:</label>
+        <input name="nomeCompleto" type="text" id="nomeCompleto" placeholder="Digite seu Nome completo"><br>
+        <br>
+
+        <label class="forms" for="Idade">Idade:</label>
+        <input class="Forms"; name="idade" type="text" id="idade" placeholder="Ex.: 23"><br>
+        <br>
+
+        <label class="forms" for="profissao">Profissão:</label>
+        <input name="profissao" type="text" id="profissao" placeholder="Ex:Programador"><br>
+        <br>
+
+        <label class="forms" for="salarioPretendido">Salário Pretendido:</label>
+        <input name="salarioPretendido" type="text" id="salarioPretendido" placeholder="Ex: 3500"><br>
+        <br>
+		
+	<!-- cuidado com a ExperienciaAnterior (letras maiúscula no início -->
+        <label class="forms" for="ExperienciaAnterior">Experiência Anterior:</label>
+        <textarea
+        id="ExperienciaAnterior"
+        name="ExperienciaAnterior"
+        rows="6"
+        cols="50"
+        placeholder="Descreva suas experiências profissionais anteriores..."
+        required></textarea>
+        <br><br>
+		
+		<!-- botão que envia o texto ao arquivo processaCadastro.php -->
+        <input name="Enviar" type="submit" id="enviar" value="enviar">
+    </form>
+</body>
+
+</html>

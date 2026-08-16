@@ -1,0 +1,63 @@
+/*  ARQUIVO DE ESTILOS  */
+
+* {
+    box-sizing: border-box;
+}
+/* Cofiguração do corpo da página */
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+    color: #333;
+}
+/* Definição de estilos no formulário */
+form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+/* estilo dos rótulos (LABEL) */
+.forms {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #black;
+}
+/* Campos de textos */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+/* Área de texto estendida (textarea) */
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+/*    BOTÃO ENVIAR    */
+input[type="submit"] {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+}
