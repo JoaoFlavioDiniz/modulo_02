@@ -7,9 +7,9 @@ $salarioPretendido = $_POST['salarioPretendido'];
 $ExperienciaAnterior = $_POST['ExperienciaAnterior'];
 
 //apresentar cada informação em uma linha 
-echo "<center><b>Nome Completo:</b>".$_POST['nomeCompleto']."<br></center>";
-echo "<center><b>Idade:</b> ".$_POST['idade']."<br></center>";
-echo "<center><b>Profissao:</b>".$_POST['profissao']."<br></center>";
+echo "<center><b>Nome Completo: </b>".$_POST['nomeCompleto']."<br></center>";
+echo "<center><b>Idade: </b> ".$_POST['idade']."<br></center>";
+echo "<center><b>Profissao: </b>".$_POST['profissao']."<br></center>";
 echo "<center><b>Salario Pretendido: R$ </b>".$_POST['salarioPretendido']."<br></center>";
 echo "<center><b>Experiencia Anterior: </b>" .$_POST['ExperienciaAnterior']."<br><br></center>";
 

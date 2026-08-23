@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- formulario desenvolvido com o auxilio da IA e alterado pelo autor -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="card-container">
+        <header class="card-header">
+            <h2>Finalizar Compra</h2>
+            <p>Informe os dados para processar a cobrança</p>
+        </header>
+
+        <form action="processa.php" method="POST" class="formulario-venda">
+            
+            <div class="campo-grupo">  <!-- label do nome do cliente -->
+                <label for="txtNome">Nome do Cliente</label>
+                <input type="text" id="txtNome" name="txtNome" placeholder="Digite o nome completo" required>
+            </div>
+
+            <div class="campo-grupo">  <!-- label do valor compra -->
+                <label for="txtValorCompra">Valor da Compra (R$)</label>
+                <div class="input-monetario">
+                    <span class="simbolo-moeda">R$</span>
+                    <input type="number" id="txtValorCompra" name="txtValorCompra" step="0.01" min="0.01" placeholder="0,00" required>
+                </div>
+            </div>
+
+            <div class="campo-grupo"> <!-- caixa de seleção da forma de pagamento-->
+                <label for="cmbPag">Forma de Pagamento</label>
+                <div class="select-container">
+                    <select id="cmbPag" name="cmbPag" required>
+                        <option value="" disabled selected>Selecione uma opção...</option>
+                        <option value="deposito">Depósito Bancário</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="cartaoCredito">Cartão de Crédito</option>
+                    </select>
+                </div>
+            </div>
+<!-- botão submit para finalizar a compra -->
+            <button type="submit" class="btn-confirmar">Concluir Pagamento</button>
+
+        </form>
+    </main>
+<!--Precisei da ajuda da IA para acertar os valor dos campos para alinhar com o 
+código fornecido em PHP na atividade. Conforme comentado pelo docente no encontro síncrono dessa semana,
+a criação do formulário precisa ser ajustada de acordo com o arquivo de ação do PHP neste caso foi o
+ método post. Fiz diversas tentativas para ajustar e confirmar o funcionamento correto do formulário-->
+</body>
+</html>
