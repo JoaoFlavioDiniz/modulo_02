@@ -135,7 +135,7 @@ $alunos = [
         <tbody>
             <?php
             /*
-             * ESTRUTURA FOREACH:
+             * ESTRUTURAFOREACH:
              * A estrutura foreach percorre sequencialmente cada aluno cadastrado no array $alunos.
              * A cada volta do laço, ela extrai as notas dos 4 bimestres, calcula a média aritmética somando-as e 
              * dividindo pela quantidade, e gera automaticamente uma nova linha (<tr>) na tabela HTML.
